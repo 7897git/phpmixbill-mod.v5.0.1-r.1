@@ -1,0 +1,8 @@
+[11-Mar-2022 22:55:10 UTC] PHP Fatal error:  Uncaught Error: Call to a member function display() on null in /home/wifiprab/public_html/system/controllers/admin.php:47
+Stack trace:
+#0 {main}
+  thrown in /home/wifiprab/public_html/system/controllers/admin.php on line 47
+[11-Mar-2022 22:55:38 UTC] PHP Fatal error:  Uncaught Error: Call to a member function display() on null in /home/wifiprab/public_html/system/controllers/admin.php:47
+Stack trace:
+#0 {main}
+  thrown in /home/wifiprab/public_html/system/controllers/admin.php on line 47
