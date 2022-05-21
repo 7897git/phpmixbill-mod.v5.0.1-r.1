@@ -57,7 +57,7 @@
 					
 					<div class="form-group">
 						<div class="col-lg-offset-2 col-lg-10">
-							<button class="btn btn-success waves-effect waves-light" type="submit" style="float:right">{$_L['Generate']}</button> 
+							<button class="btn btn-success waves-effect waves-light" type="submit" onclick="myBtn()" style="float:right">{$_L['Generate']}</button> 
 						</div>
 					</div>
                 </form>
@@ -66,5 +66,10 @@
     </ion-card>
 			</div>
 		</div>
+<script>
+function myBtn() {
+  location.replace("{$_url}prepaid/voucher")
+}
+</script>
 
 {include file="sections/footer.tpl"}

@@ -49,7 +49,7 @@
 					
 					<div class="form-group">
 						<div class="col-lg-offset-2 col-lg-10" style="display:flex;justify-content:space-between;align-items:center;">
-							<button class="btn btn-primary waves-effect waves-light" type="submit">{$_L['Submit']}</button><a href="{$_url}bandwidth/list">{$_L['Cancel']}</a>
+							<button class="btn btn-primary waves-effect waves-light" type="submit" onclick="myBtn()">{$_L['Submit']}</button><a href="{$_url}bandwidth/list">{$_L['Cancel']}</a>
 						</div>
 					</div>
                 </form>
@@ -60,5 +60,10 @@
 					</div>
 				</div>
 			</div>
+<script>
+function myBtn() {
+  location.replace("{$_url}bandwidth/list")
+}
+</script>
 
 {include file="sections/footer.tpl"}

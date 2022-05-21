@@ -55,15 +55,20 @@
 
 					<div class="form-group">
 						<div class="col-lg-offset-2 col-lg-10 flex">
-							<button class="btn btn-success waves-effect waves-light" type="submit">{$_L['Save']}</button><a href="{$_url}settings/users">{$_L['Cancel']}</a>
+							<button class="btn btn-success waves-effect waves-light" type="submit" onclick="myFunc()">{$_L['Save']}</button><a href="{$_url}settings/users">{$_L['Cancel']}</a>
 						</div>
 					</div>
-                    </ion-card-content>
                 </form>
-				
+                    </ion-card-content>
+				</ion-card>
 					</div>
 				</div>
 			</div>
 		</div>
+<script>
+function myFunc() {
+  location.replace("{$_url}settings/users")
+}
+</script>
 
 {include file="sections/footer.tpl"}

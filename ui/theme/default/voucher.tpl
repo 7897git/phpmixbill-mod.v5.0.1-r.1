@@ -58,7 +58,9 @@
 									<td align="center">{if $ds['status'] eq '0'} <label class="btn-tag btn-tag-success">Not Use</label> {else} <label class="btn-tag btn-tag-danger">Used</label> {/if}</td>
 									<td align="center">{if $ds['user'] eq '0'} - {else} {$ds['user']} {/if}</td>
 									<td>
-										<a href="{$_url}prepaid/voucher-delete/{$ds['id']}" id="{$ds['id']}" class="btn btn-danger btn-sm cdelete">{$_L['Delete']}</a>
+        <ion-buttons>
+          <ion-button href="{$_url}prepaid/voucher-delete/{$ds['id']}" id="{$ds['id']}" class="cdelete"><ion-icon name="trash" color="danger" slot="start"></ion-icon><ion-label>{$_L['Delete']}</ion-label></ion-button>
+        </ion-buttons>
 									</td>
 								</tr>
 							{/foreach}

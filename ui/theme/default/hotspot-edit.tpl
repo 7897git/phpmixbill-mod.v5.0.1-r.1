@@ -115,7 +115,7 @@
 							
 							<div class="form-group">
 								<div class="col-lg-offset-2 col-lg-10 flex">
-									<button class="btn btn-success waves-effect waves-light" type="submit">{$_L['Save']}</button><a href="{$_url}services/hotspot">{$_L['Cancel']}</a>
+									<button class="btn btn-success waves-effect waves-light" type="submit" onclick="myBtn()">{$_L['Save']}</button><a href="{$_url}services/hotspot">{$_L['Cancel']}</a>
 								</div>
 							</div>
 						</form>
@@ -124,5 +124,10 @@
 				</div>
 			</div>
 		</div>
+<script>
+function myBtn() {
+  location.replace("{$_url}services/hotspot")
+}
+</script>
 
 {include file="sections/footer.tpl"}

@@ -41,8 +41,8 @@
 							</ion-item>
 										
 							<div class="form-group">
-								<div class="col-md-12">
-									<button class="btn btn-primary waves-effect waves-light" type="submit">{$_L['Save']}</button>
+								<div class="col-md-12 flex">
+									<button class="btn btn-primary waves-effect waves-light" type="submit" onclick="myBtn()">{$_L['Save']}</button> <a href="{$_url}customers/list">{$_L['Cancel']}</a>
 								</div>
 							</div>
 						</form>
@@ -51,6 +51,10 @@
 				</ion-card>
 			</div>
 		</div>
-		
-</ion-content>
+<script>
+function myBtn() {
+  location.replace("{$_url}customers/list")
+}
+</script>
+
 {include file="sections/footer.tpl"}
