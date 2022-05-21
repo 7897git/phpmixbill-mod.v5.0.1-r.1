@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Message Chat Box - Bootsnipp.com</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="../assets/css/chat.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.7/css/mdb.min.css" rel="stylesheet">
+  <link href="../assets/dist/emojionearea.css" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/chat.css" media="none" onload="if(media!='all')media='all'">
+  <style>body{background-color:#fff}::-webkit-scrollbar{width:10px}::-webkit-scrollbar-track{background:#eee}::-webkit-scrollbar-thumb{background:#888}::-webkit-scrollbar-thumb:hover{background:#555}.wrapper{height:100vh;display:flex;justify-content:center;align-items:center;background-color:#f8f9fa}.main{background-color:#eee;width:320px;position:relative;border-radius:8px;box-shadow:0 4px 8px 0 rgba(0,0,0,.2),0 6px 20px 0 rgba(0,0,0,.19);padding:6px 0 0 0}.scroll{overflow-y:scroll;scroll-behavior:smooth;height:325px}.img1{border-radius:50%;background-color:#66bb6a}.name{font-size:8px}.msg{background-color:#fff;font-size:11px;padding:5px;border-radius:5px;font-weight:500;color:#3e3c3c}.between{font-size:8px;font-weight:500;color:#a09e9e}.navbar{border-bottom-left-radius:8px;border-bottom-right-radius:8px;box-shadow:0 4px 8px 0 rgba(0,0,0,.2),0 6px 20px 0 rgba(0,0,0,.19)}.form-control{font-size:12px;font-weight:400;width:230px;height:30px;border:none}form-control: focus{box-shadow:none;overflow:hidden;border:none}.form-control:focus{box-shadow:none!important}.icon1{color:#7c4dff!important;font-size:18px!important;cursor:pointer}.icon2{color:#512da8!important;font-size:18px!important;position:relative;left:8px;padding:0;cursor:pointer}.icondiv{border-radius:50%;width:15px;height:15px;padding:2px;position:relative;bottom:1px}</style>
+  
+</head>
+
+<body onload="inisiasi()">
+
+
+  <div class="container">
+<div class="row">
+    <div class="col-md-12">
+    <div class="messaging">
+      <div class="inbox_msg">
+        <div class="inbox_people">
+          <div class="headind_srch">
+            <div class="recent_heading">
+              <i style="cursor: pointer;" class="fas fa-plus" aria-hidden="true"> Tambah teman</i>
+            </div>
+            <div class="srch_bar">
+              <div class="stylish-input-group">
+                <input type="text" id="keyword" class="search-bar" onkeyup="cariTemanObrolan()"
+                  placeholder="Cari Obrolan">
+                <span class="input-group-addon">
+                  <button type="button"> <i class="fa fa-search" aria-hidden="true"></i> </button>
+                </span> </div>
+            </div>
+          </div>
+          <div class="inbox_chat">
+            <div id="daftarObrolan">
+
+            </div>
+          </div>
+        </div>
+        <div class="mesgs">
+          <div class="msg_history">
+            <div id="historiObrolan">
+            </div>
+            
+            <div id="formKirimPesan">
+              <div class="type_msg">
+                <div class="input_msg_write">
+                  <input type="text" class="write_msg" id="pesan" onkeydown="listen()" placeholder="Ketikkan sebuah pesan" />
+                  
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+ </div>
+
+
+
+
+  <!-- Modal tambah teman-->
+  <div class="modal fade" id="tambahTeman" tabindex="-1" role="dialog" aria-labelledby="tambahTeman" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-notify modal-info" role="document">
+      <!--Content-->
+      <div class="modal-content">
+        <!--Header-->
+        <div class="modal-header">
+          <p class="heading lead">Tambah Teman</p>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true" class="white-text">&times;</span>
+          </button>
+        </div>
+        <!--Body-->
+        <div class="modal-body">
+        </div>
+        <!--Footer-->
+        <div class="modal-footer">
+        </div>
+      </div>
+      <!--/.Content-->
+    </div>
+  </div>
+  <!-- Modal tambah teman-->
+
+
+<!-- JQuery -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js">
+</script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../assets/dist/emojionearea.js">
+</script>
+<script type="text/javascript" src="../assets/js/chat.js"></script>
+
+</body>
+
+</html>

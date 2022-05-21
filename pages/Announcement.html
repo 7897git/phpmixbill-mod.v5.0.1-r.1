@@ -1,0 +1,59 @@
+			<br/><div class="card-body p-0">
+                <div class="callout callout-danger">
+                  <h5>Kode Voucher Gratis!</h5>
+                  <p id="pocer"></p>
+                </div>
+                <div class="callout callout-warning">
+                  <h5>Isi ulang/TopUp!</h5>
+
+                  <p><b>mengisi ulang / TopUp</b> akun member kamu. dengan voucher bisa dilakukan di member area ini, klik tombol <b>isi ulang akun</b></p>
+                </div>
+                <div class="callout callout-info">
+                  <h5>TopUp OTOMATIS</h5>
+
+                  <p>hubungi DAFFA (dapong) Untuk TopUp OTOMATIS /juga bisa Datang ke Rumah.</p>
+                </div>
+                <div class="callout callout-success">
+                  <h5>System Login Hotspot yang baru!</h5>
+
+                  <p>- Akun wi-fi permanen ini bisa di <b>isi ulang</b> dengan <font color="#cc0000">kuota waktu</font> atau pun <font color="#cc0000">kuota GigaBite</font><br>- Login wifi hanya bisa dilakukan dengan akun yang sudah terdaftar di database.<br/>- Login Wi-Fi di <a href="http://wifi-prabayar.net"><b>wifi-prabayar.net</b></a> buka melalui browser, jika halaman login otomatis tidak muncul.<br/>- Kode Voucher <b>GRATIS</b> Akan Muncul pada waktu Hitungan Mundur Habis. Hanya Untuk 1 Orang.</p>
+                </div>
+            </div>
+<script type="text/javascript">
+    function copy_text() {
+        document.getElementById("pilih").select();
+        document.execCommand("copy");
+        alert("Kode Voucher Berhasil Di Salin, Silahkan Tempel Dikolom ISI ULANG. Semoga Beruntung :)");
+    }
+</script>
+
+<script>
+// Mengatur waktu akhir perhitungan mundur
+var countDownDate = new Date("Dec 31, 2022 00:00:00").getTime();
+
+// Memperbarui hitungan mundur setiap 1 detik
+var x = setInterval(function() {
+
+  // Untuk mendapatkan tanggal dan waktu hari ini
+  var now = new Date().getTime();
+    
+  // Temukan jarak antara sekarang dan tanggal hitung mundur
+  var distance = countDownDate - now;
+    
+  // Perhitungan waktu untuk hari, jam, menit dan detik
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Keluarkan hasil dalam elemen dengan id = "pocer"
+  document.getElementById("pocer").innerHTML = days + " Hari : " + hours + " Jam : "
+  + minutes + " Menit : " + seconds + " Detik " + "<br/><sup style='font-size: 12px'>Kode Voucher Akan Muncul Setelah Hitungan Mundur Habis</sup>";
+    
+  // Jika hitungan mundur selesai, tulis beberapa teks 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("pocer").innerHTML = "<p><input class='form-control border-0' type='text' value='039777FA660E' id='pilih' readonly /><button class='btn btn-sm' type='button' onclick='copy_text()'>Copy</button></p>";
+  }
+}, 1000);
+</script>
